@@ -2,8 +2,12 @@ services:
   - type: web
     name: news-aggregator
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    buildCommand: ./build.sh
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.9.0
+      - key: NEWS_API_KEY
+        value: dcb23e470ef1442bb8b6a4a08def145e
+      - key: FLASK_ENV
+        value: production
