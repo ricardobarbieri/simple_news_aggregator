@@ -1,0 +1,72 @@
+.news-card {
+    height: 100%;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.score-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+.topic-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0,123,255,0.9);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+.card-body { 
+    padding-top: 45px; 
+}
+
+.navbar { 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+
+.card-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.card-text {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.update-info {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 0.9em;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
